@@ -1,0 +1,10 @@
+langgraph>=0.2.60
+langgraph-checkpoint-sqlite>=2.0
+langchain-core>=0.3
+pydantic>=2
+
+[anthropic]
+langchain-anthropic
+
+[dev]
+pytest>=8

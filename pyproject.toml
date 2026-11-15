@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-rag-orchestrator"
+version = "0.1.0"
+description = "LangGraph agent that routes between a RAG tool and web search and answers with citations"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.60",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "langchain-core>=0.3",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+anthropic = ["langchain-anthropic"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

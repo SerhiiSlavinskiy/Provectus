@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: agentic-rag-orchestrator
+Version: 0.1.0
+Summary: LangGraph agent that routes between a RAG tool and web search and answers with citations
+Requires-Python: >=3.10
+Requires-Dist: langgraph>=0.2.60
+Requires-Dist: langgraph-checkpoint-sqlite>=2.0
+Requires-Dist: langchain-core>=0.3
+Requires-Dist: pydantic>=2
+Provides-Extra: anthropic
+Requires-Dist: langchain-anthropic; extra == "anthropic"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
